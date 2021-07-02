@@ -860,3 +860,14 @@ def TRR_TO_PDB(path_trr, path_pdb, list, path=""):
                 ag.write(path + "pdb_file/{0}.pdb".format(i+1))
         except StopIteration:
             break
+
+
+def SORT_kai(List):
+    List = list(map(float, List)).sort
+    test = [0.0] * 10
+    for i in List:
+        if i == 0:
+            test[0].append(i)
+    return test
+
+    
